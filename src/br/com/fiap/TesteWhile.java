@@ -11,13 +11,17 @@ public class TesteWhile {
 		
 		Scanner leitor = new Scanner(System.in);
 		String nome;
+		int repeticoes;
 		
 		System.out.println("Digite seu nome:");
 		nome = leitor.next();
 		
-		int contador = 0;
+		System.out.println("Quantidade de repetições?");
+		repeticoes = leitor.nextInt();
 		
-		while (contador <= 10) {
+		int contador = 1;
+		
+		while (contador <= repeticoes) {
 			System.out.println(contador + " - " + nome);
 			contador = contador + 1;
 			
